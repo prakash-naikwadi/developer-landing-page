@@ -25,13 +25,15 @@ This is a assignment given in **"JavaScript Full Stack Web Developer Bootcamp"**
 
 - I joined a bootcamp **"JavaScript Full Stack Web Developer Bootcamp"** by **iNeuron**.<a href="https://ineuron.ai/"> **Check🚀 (Not Sponsered)**</a>
 - This project is given us as assignment.
-- It took me about **3 hours** to complete this project.
+- It took me about **5 hours** to complete this project.
 
 ## 📌 What I Learn
 
-👉 Learn how to use `linear-gradient` and apply gradient on buttons.  
+👉 Learn how to develope a design into code.  
 👉 How to place images in proper places using positions.  
-👉 Achieve some responsiveness using FlexBox & used rem unit.
+👉 Learn some HTML standards and how to write clean code.  
+👉 Learn how to work with svg image format.  
+👉 Learn some design patterns.
 
 ## 📬 Connect With Me
 
