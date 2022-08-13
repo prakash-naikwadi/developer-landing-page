@@ -63,6 +63,7 @@ body {
   /* min-width: 100vw; */
   background-color: #4a1dfe;
   position: relative;
+  padding: 0 2.4rem;
 }
 
 /* ------------------------- */
@@ -75,13 +76,25 @@ body {
   margin: 0 auto;
 }
 
+.hero-section {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+}
+.header-image-div {
+  position: relative;
+  width: 40%;
+}
+
 .header-image {
-  max-height: 110%;
+  /* max-height: 110%; */
+  /* max-height: 47.3rem; */
   /* max-width: 45%; */
+  width: 100%;
 
   position: absolute;
-  right: 0;
-  top: 15%;
+  right: -10%;
+  /* top: 15%; */
 }
 
 .navbar {
@@ -141,7 +154,7 @@ body {
   display: flex;
   gap: 3.2rem;
 
-  padding: 2.4rem 0;
+  padding: 2.4rem 2.4rem;
   max-width: 130rem;
   margin: 0 auto;
   margin-bottom: 6.4rem;
@@ -162,6 +175,7 @@ body {
 .api {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 2.4rem;
 }
 
 .api-heading {
@@ -223,6 +237,7 @@ body {
   margin: 0 auto;
 
   margin-top: 8.6rem;
+  padding: 0 2.4rem;
 }
 
 .blog-heading h1 {
@@ -302,12 +317,13 @@ body {
 }
 
 /* ------------------------- */
-/* <!-- Blog section --> */
+/* <!-- FAQ section --> */
 /* ------------------------- */
 
 .faq-section-container {
   background-color: #eaedfd;
   margin-top: 9.6rem;
+  padding: 0 0 0 2.4rem;
 }
 
 .faq-section {
@@ -345,6 +361,10 @@ body {
   cursor: pointer;
 }
 
+.faq-image img {
+  display: block;
+}
+
 /* ------------------------- */
 /* <!-- Download  section --> */
 /* ------------------------- */
@@ -356,6 +376,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2.4rem;
 }
 
 .download-content h1 {
@@ -468,4 +489,116 @@ body {
 
 .footer-right-inner img:hover {
   cursor: pointer;
+}
+
+/* **************************************** */
+/* Media Queries */
+/* **************************************** */
+
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 69em) {
+  .blog-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-card {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 59em) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-image-div {
+    position: static;
+  }
+  .header-image-div {
+    align-self: center;
+  }
+  .header-image {
+    position: static;
+    width: 110%;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 57em) {
+  .navbar {
+    display: none;
+  }
+  .logo-div {
+    padding-top: 3.2rem;
+  }
+
+  .cards {
+    flex-flow: row wrap;
+    gap: 2.4rem;
+  }
+
+  .faq-section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  html {
+    /* font-size: 45%; */
+  }
+  .download-section {
+    flex-direction: column;
+  }
+  .faq-image {
+    display: flex;
+    justify-content: center;
+  }
+  .faq-image img {
+    max-width: 75%;
+    display: block;
+  }
+
+  .blog-card {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    width: auto;
+  }
+  .blog-image img {
+    width: 100%;
+  }
+  .blog-left-section {
+    padding: 3.2rem;
+  }
+  .email-input-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  .email-input-div button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 32em) {
+  html {
+    font-size: 45%;
+  }
+  .footer-section {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  html {
+    font-size: 40%;
+  }
 }
